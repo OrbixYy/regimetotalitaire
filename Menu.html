@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="style_menu_vrai.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+  </script>
+    <a href="index.html"><i class="far fa-arrow-alt-circle-left fa-3x my-10"></i></a>
+    <div class="content">
+      <a href="Article.html">Voir l'article "La Folie du Fascisme italien"</a>
+      <a href="Article2.html">Voir l'article "La Vie sous Staline"</a>
+      <a href="Article3.html">Voir l'article sur "L'affaire Nazi"</a>
+      <a href="Article4.html">Voir l'article "Le siècle des totalitarismes"</a>
+    </div>
+  </div>
+</body>
+</html>
