@@ -150,7 +150,7 @@ p {
 /* value proposition */
 .vp {
   height: 700px;
-  background: url(http://image.noelshack.com/fichiers/2021/13/3/1617181966-sans-titre-24.png)
+  background: url(https://image.noelshack.com/fichiers/2023/50/2/1702375539-cloth-gc1523613d-1920-1.jpg)
     center center;
   background-size: cover;
   text-align: center;
@@ -159,7 +159,7 @@ p {
 .vp-content {
   max-width: 600px;
   padding-top: 150px;
-  color: white;
+  color: rgb(255, 255, 255);
   margin: auto;
 }
 
