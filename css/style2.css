@@ -1,0 +1,440 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.underline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.chip {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  border-radius: 100%;
+  background: #333;
+  color: white;
+}
+
+.chip-purple {
+  background: #be418c;
+}
+
+.chip-brown {
+  background: #8c5e24;
+}
+
+.separator {
+  margin: 20px auto;
+  height: 10px;
+  width: 100px;
+  background: #111;
+}
+
+.separator_long {
+  margin: 0;
+  height: 5px;
+  width: 2000vh;
+  background: #111;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  border: 0px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: white;
+  color: #222;
+}
+
+.btn-primary:hover {
+  background: #222;
+  color: white;
+}
+
+.btn-dark {
+  background: #222;
+  color: white;
+}
+
+.btn-dark:hover {
+  background: white;
+  color: #222;
+  border: 1px solid #222;
+}
+
+.container {
+  max-width: 1000px;
+  display: block;
+  margin: auto;
+}
+
+/* Header */
+
+.header {
+  background: rgb(0, 150, 170);
+  overflow: auto;
+  line-height: 1.7em;
+}
+
+.header nav h1 {
+  float: left;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.header nav h1 a {
+  color: white;
+}
+
+.header nav ul {
+  float: right;
+  list-style: none;
+}
+
+.header nav ul li {
+  float: left;
+}
+
+.header nav ul li a {
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  display: block;
+}
+
+.header nav ul li a:hover,
+.active {
+  background: rgb(216, 185, 7);
+}
+
+/* value proposition */
+.vp {
+  height: 700px;
+  background: url(http://image.noelshack.com/fichiers/2021/13/3/1617181966-sans-titre-24.png)
+    center center;
+  background-size: cover;
+  text-align: center;
+}
+
+.vp-content {
+  max-width: 600px;
+  padding-top: 150px;
+  color: white;
+  margin: auto;
+}
+
+.vp-content h1 {
+  font-size: 50px;
+}
+
+.vp-content p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.9em;
+}
+
+/* features */
+
+.features {
+  overflow: auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.feature {
+  float: left;
+  width: 50%;
+}
+
+.separator {
+  background-color: rgb(30, 177, 245);
+}
+
+/* person */
+
+.person {
+  height: 400px;
+  background: url(https://dyma-images.s3.fr-par.scw.cloud/html-css/projects/project1/cafe3.jpg)
+    center center/cover;
+}
+
+/* reservation */
+
+.reservation {
+  padding: 100px 0px;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  background: #222;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0px;
+}
+
+/* where */
+
+.where {
+  padding: 180px 0;
+  overflow: auto;
+  min-height: 100vh;
+}
+
+.where-img {
+  float: left;
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.where-text {
+  float: right;
+  width: 50%;
+}
+
+/* contact */
+
+.contact {
+  padding: 180px 0;
+  min-height: 100vh;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form-container form label {
+  display: block;
+  font-weight: 700;
+}
+
+.contact-form-container form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.contact-form-container form textarea {
+  min-height: 80px;
+}
+
+.src {
+  position: center;
+  text-align: center;
+  align-self: center;
+  overflow: visible;
+  padding-left: 25vh;
+  padding-top: 2vh;
+}
+
+/* showcase */
+
+.showcase {
+  padding: 2rem 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+
+.showcase article:first-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+.showcase article:last-child {
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+}
+
+.article-small {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 80px auto;
+  grid-template-rows: 80px;
+  grid-auto-rows: auto;
+}
+
+.article-small p {
+  margin: 0.5rem 0;
+}
+
+.article-small .article-content {
+  grid-column: span 2;
+  max-height: 6rem;
+  overflow: hidden;
+}
+
+.article-small .article-author,
+.article-small .text-hint {
+  grid-column: span 2;
+}
+
+.article-author {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* ads */
+
+.ads {
+  background: var(--gray-light);
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 200px 1fr auto 1fr;
+  grid-template-rows: 1fr auto auto auto 1fr;
+  grid-template-areas:
+    "img . . ."
+    "img . h1 ."
+    "img . p ."
+    "img . form ."
+    "img . . .";
+}
+
+.ads img {
+  grid-area: img;
+}
+
+.ads h1 {
+  grid-area: h1;
+  font-size: 4rem;
+}
+
+.ads p {
+  grid-area: p;
+}
+
+.ads form {
+  grid-area: form;
+}
+
+.ads form input {
+  background: var(--gray-light);
+  border: 0;
+  border-bottom: 1px solid var(--dark);
+  padding: 1rem 0;
+  margin-right: 1rem;
+  outline: 0;
+}
+
+/* content */
+
+.content {
+  margin: 3rem 0;
+  display: flex;
+  align-items: start;
+}
+
+.articles {
+  flex: auto;
+}
+
+.articles article {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "title img"
+    "content img"
+    "author img"
+    "details img";
+  margin-bottom: 2rem;
+}
+
+.articles article h3,
+.articles article p {
+  margin: 0.2rem 0;
+}
+
+.articles article img {
+  grid-area: img;
+}
+.articles article h3 {
+  grid-area: title;
+}
+
+.articles article p:first-child {
+  grid-area: content;
+}
+
+.articles article .article-author {
+  grid-area: author;
+}
+
+.articles article .text-hint {
+  grid-area: details;
+}
+
+.popular {
+  flex: 350px;
+  padding: 0 3rem;
+  position: sticky;
+  top: 45px;
+}
+
+.popular ul li {
+  display: grid;
+  grid-template-columns: 50px auto;
+  place-items: center center;
+  margin-bottom: 1rem;
+}
+
+.popular ul li div:first-child {
+  font-size: 3rem;
+  color: var(--gray-hint);
+}
+
+.popular ul li p,
+.popular ul li h3 {
+  margin: 0.2rem;
+}
